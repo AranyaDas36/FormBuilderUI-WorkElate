@@ -10,7 +10,7 @@ function FormBuilder() {
   const [fieldLabel, setFieldLabel] = useState('');
   const [fieldType, setFieldType] = useState('text');
   const [fieldRequired, setFieldRequired] = useState(false);
-  const [fieldOptions, setFieldOptions] = useState(''); // For dropdown options
+  const [fieldOptions, setFieldOptions] = useState(''); 
   const [formAnswers, setFormAnswers] = useState({});
   const [validationErrors, setValidationErrors] = useState({});
   const [submissionMessage, setSubmissionMessage] = useState('');
@@ -114,7 +114,7 @@ function FormBuilder() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Form Builder Section */}
-      <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
+      <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white ">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Build Your Form</h2>
 
         <div className="mb-6 p-4 border border-blue-200 bg-blue-50 rounded-md">
@@ -182,7 +182,7 @@ function FormBuilder() {
       <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Fill Out Your Form</h2>
         {formFields.length === 0 ? (
-          <p className="text-gray-500 text-center">Start by adding fields to the form builder on the left.</p>
+          <p className="text-gray-500 text-center">Add the fields to the form builder</p>
         ) : (
           <form onSubmit={handleSubmitForm} className="space-y-4">
             {formFields.map((field) => (
