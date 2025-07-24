@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const FormResponseSchema = new mongoose.Schema({
   formed: {
-    type: Object, // Stores the JSON schema of the form that was submitted
+    type: Object, 
     required: true,
   },
   answers: {
-    type: Object, // Stores the answers submitted by the user
+    type: Object, 
     required: true,
   },
   submittedAt: {
