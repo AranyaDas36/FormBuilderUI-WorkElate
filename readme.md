@@ -54,11 +54,11 @@ FormBuilderUI-WorkElate/
 git clone https://github.com/your-username/FormBuilderUI-WorkElate.git
 cd FormBuilderUI-WorkElate
 
-cd server
+2. cd server
 npm install
 node index.js
 
-cd ../client
+3. cd ../client
 npm install
 npm run dev
 
