@@ -27,8 +27,8 @@ function App() {
       </nav>
 
 
-
-      <main className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            
+      <main className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg">
         {view === 'builder' ? <FormBuilder /> : <FormSummary />}
       </main>
     </div>

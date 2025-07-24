@@ -112,9 +112,9 @@ function FormBuilder() {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 mt-16">
       {/* Form Builder Section */}
-      <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white ">
+      <div className="p-10 border border-gray-200 rounded-lg shadow-sm bg-blue-50">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Build Your Form</h2>
 
         <div className="mb-6 p-4 border border-blue-200 bg-blue-50 rounded-md">
@@ -182,7 +182,7 @@ function FormBuilder() {
       <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Fill Out Your Form</h2>
         {formFields.length === 0 ? (
-          <p className="text-gray-500 text-center">Add the fields to the form builder</p>
+          <p className="text-gray-500 text-left">Add the fields to the form builder</p>
         ) : (
           <form onSubmit={handleSubmitForm} className="space-y-4">
             {formFields.map((field) => (
