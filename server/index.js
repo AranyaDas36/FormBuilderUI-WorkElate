@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 const MONGO_URI = process.env.MONGO_URI;
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://form-builder-ten-rosy.vercel.app'],
+  origin: ['http://localhost:5173', 'https://formuilder.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true,
 };
