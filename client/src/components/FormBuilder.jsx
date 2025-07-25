@@ -3,7 +3,7 @@ import FormField from './FormField';
 import FormPreview from './FormPreview';
 import axios from 'axios';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://formbuilderui-workelate.onrender.com';
 
 function FormBuilder() {
   const [formFields, setFormFields] = useState([]);
@@ -100,7 +100,7 @@ function FormBuilder() {
     };
 
     try {
-      const response = await axios.post(`${BACKEND_URL}/api/forms/submit`, submissionData);
+      const response = await axios.post('https://formbuilderui-workelate.onrender.com/api/forms/submit', submissionData);
       setSubmissionMessage('Form submitted successfully!');
       setFormAnswers({}); // Clear form after submission
       setValidationErrors({}); // Clear validation errors
